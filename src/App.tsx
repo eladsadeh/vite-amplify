@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
+import { About } from './About';
 import './App.css';
+console.log('APP_VERSION', APP_VERSION);
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  console.log('APP_VERSION', APP_VERSION);
+  const [showAbout, setShowAbout] = useState(false);
 
   return (
     <>
@@ -20,14 +20,9 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>Version {APP_VERSION}</p>
+        <button onClick={() => setShowAbout(!showAbout)}>About</button>
+        {showAbout && <About />}
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   );
 }
