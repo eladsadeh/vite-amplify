@@ -1,0 +1,15 @@
+{
+  "viteaplify": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-viteamplify-viteaplify-151701-authRole",
+      "UnauthRoleArn": "arn:aws:iam::339319264465:role/amplify-viteamplify-viteaplify-151701-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::339319264465:role/amplify-viteamplify-viteaplify-151701-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-viteamplify-viteaplify-151701-deployment",
+      "UnauthRoleName": "amplify-viteamplify-viteaplify-151701-unauthRole",
+      "StackName": "amplify-viteamplify-viteaplify-151701",
+      "StackId": "arn:aws:cloudformation:us-east-1:339319264465:stack/amplify-viteamplify-viteaplify-151701/864c5560-c463-11ee-b440-1212618374a5",
+      "AmplifyAppId": "dz78uwssl6p86"
+    }
+  }
+}
