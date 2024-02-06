@@ -4,6 +4,8 @@ import './App.css';
 console.log('import.meta.env:', import.meta.env);
 // @ts-ignore
 console.log('process.env:', process.env);
+console.log('APP_VERSION:', APP_VERSION);
+console.log('BUILD_TIME:', BUILD_TIME);
 
 function App() {
   const [showAbout, setShowAbout] = useState(false);
