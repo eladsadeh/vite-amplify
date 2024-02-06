@@ -3,7 +3,9 @@ import { useState } from 'react';
 // import viteLogo from '/vite.svg';
 import { About } from './About';
 import './App.css';
-console.log('APP_VERSION', APP_VERSION);
+// console.log('APP_VERSION', APP_VERSION);
+console.log(import.meta.env);
+// console.log('myvars.env', myvars.env);
 
 function App() {
   const [showAbout, setShowAbout] = useState(false);
@@ -19,6 +21,7 @@ function App() {
         </a>
       </div> */}
       <h1>Vite + Amplify</h1>
+      <h2>Test Amplify CLI</h2>
       <div className="card">
         <button onClick={() => setShowAbout(!showAbout)}>About</button>
         {showAbout && <About />}
