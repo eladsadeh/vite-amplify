@@ -6,10 +6,10 @@ export default defineConfig({
   plugins: [react()],
   define: {
     APP_VERSION: JSON.stringify(process.env.npm_package_version),
+    BUILD_TIME: JSON.stringify(new Date().toUTCString()),
     'process.env.PACKAGE_VERSION': JSON.stringify(
       process.env.npm_package_version
     ),
-    BUILD_TIME: JSON.stringify(new Date().toUTCString()),
-    'myvars.env.VAR2': JSON.stringify('VALUE2'),
+    'import.meta.env.DEFINE_VAR_META': JSON.stringify('SOMETHING'),
   },
 });
