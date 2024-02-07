@@ -1,5 +1,6 @@
 {
   "name": "vite-amplify",
+  "productName": "Vite Amplify",
   "private": true,
   "version": "8.0.123",
   "type": "module",

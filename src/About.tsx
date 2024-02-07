@@ -1,9 +1,9 @@
 export const About = () => {
-  const name = import.meta.env.VITE_APP_NAME;
+  const { MY_APP_NAME, MY_APP_VERSION, BUILD_TIME } = import.meta.env;
   return (
     <div>
-      <p>{name}</p>
-      <p>Version {APP_VERSION}</p>
+      <p>{MY_APP_NAME}</p>
+      <p>Version {MY_APP_VERSION}</p>
       <p>{BUILD_TIME}</p>
     </div>
   );
